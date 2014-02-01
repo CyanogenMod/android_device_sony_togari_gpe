@@ -30,4 +30,4 @@ PRODUCT_NAME := full_togari_gpe
 PRODUCT_DEVICE := togari_gpe
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := Z Ultra Google Play Edition #C6806_GPe
+PRODUCT_MODEL := C6806
