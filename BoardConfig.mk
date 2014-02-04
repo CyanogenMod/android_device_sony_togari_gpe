@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # inherit from the common togari definitions
--include device/sony/togari/BoardConfig.mk
+include device/sony/togari/BoardConfig.mk
 
 # inherit from the proprietary version
 #-include vendor/sony/togari_gpe/BoardConfigVendor.mk
