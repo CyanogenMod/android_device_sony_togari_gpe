@@ -1,4 +1,5 @@
-# Copyright (C) 2013-14 The CyanogenMod Project
+# Copyright (C) 2012 The Android Open Source Project
+# Copyright (C) 2012 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the common togari definitions
-include device/sony/togari/BoardConfig.mk
+"""Custom OTA Package commands for togari_gpe"""
 
-# inherit from the proprietary version
-#-include vendor/sony/togari_gpe/BoardConfigVendor.mk
-
-# Assert
-TARGET_OTA_ASSERT_DEVICE := C6806,C6806_GPe,togari,togari_gpe
-
-TARGET_RELEASETOOLS_EXTENSIONS := device/sony/togari_gpe
+def FullOTA_Assertions(self):
+  self.script.AppendExtra('assert(is_substring("GPE", getprop("ro.boot.s1boot")) == "t");')
