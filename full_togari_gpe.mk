@@ -30,4 +30,4 @@ PRODUCT_NAME := full_togari_gpe
 PRODUCT_DEVICE := togari_gpe
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_MODEL := C6806
+PRODUCT_MODEL := Xperia Z Ultra
