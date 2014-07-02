@@ -20,7 +20,7 @@ $(call inherit-product, vendor/sony/togari_gpe/togari_gpe-vendor.mk)
 
 # Override rhine-common fstab
 # We don't have /mnt/idd
-PRODUCT_COPY_FILES := \
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rootdir/fstab.qcom:root/fstab.qcom
 
 # Inherit the togari definitions
