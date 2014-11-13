@@ -22,3 +22,6 @@ include device/sony/togari/BoardConfig.mk
 TARGET_OTA_ASSERT_DEVICE := C6806,C6806_GPe,togari,togari_gpe
 
 TARGET_SYSTEM_PROP := device/sony/togari/system.prop
+
+# For two-stage boot configuration
+TARGET_RECOVERY_DEVICE_DIRS := device/sony/togari
